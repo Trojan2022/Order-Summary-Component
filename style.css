@@ -1,0 +1,115 @@
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-vale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+main{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-color: var(--Pale-blue);
+}
+
+.pic{
+    width: 400px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url(images/illustration-hero.svg);
+}
+
+.content{
+    width: 400px;
+    height: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Very-vale-blue);
+}
+
+p{
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    color: var(--Desaturated-blue);
+    line-height: 1.5rem;
+}
+
+.m-plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Pale-blue);
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.music-icon{
+    background-color: var(--Very-vale-blue);
+}
+
+.plan, h2, .ch{
+    color: var(--Dark-blue);
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+}
+
+.ch{
+    color: var(--Bright-blue);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.p-p{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px 0px 10px;
+}
+
+button{
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    padding: 10px 90px;
+    font-weight: 700;
+    color: var(--Very-vale-blue);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--Dark-blue);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+a:hover{
+    color: var(--Dark-blue);
+}
